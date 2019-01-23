@@ -5,3 +5,4 @@ authors = ["Gitai <i@gitai.me>"]
 edition = "2018"
 
 [dependencies]
+railcar = { path = "railcar" }
