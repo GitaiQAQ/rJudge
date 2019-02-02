@@ -1,8 +1,16 @@
 [package]
-name = "rJudge"
+name = "r_judge"
 version = "0.1.0"
 authors = ["Gitai <i@gitai.me>"]
 edition = "2018"
 
 [dependencies]
 railcar = { path = "railcar" }
+oci = { path = "railcar/oci" }
+log = {version = "0.4.3", features = ["release_max_level_info"] }
+error-chain = "0.10.0"
+lazy_static = "^1.1.0"
+nix = "0.11.0"
+prctl = "1.0.0"
+tokio-core = ""
+futures = ""
