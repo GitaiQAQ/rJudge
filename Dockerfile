@@ -1,5 +1,9 @@
 FROM rust:cn
+MAINTAINER Gitai<i@gitai.me>
 
 WORKDIR /root
 ADD . /root
-RUN cd /root && cargo build
+
+ENV RUSTFLAGS="-A dead_code"
+
+ENTRYPOINT ["cargo", "build", "-v"]
